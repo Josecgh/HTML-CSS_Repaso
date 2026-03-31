@@ -1,0 +1,142 @@
+:root {
+  --gris: #4e4e4e;
+  --lila: #503c53;
+  --lila_claro: #af87b5;
+  --rosa: #c49a8f;
+  --blanco: #ffffff;
+
+  --font-size-base: 16px;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.25rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 1rem;     /* 16px */
+  --space-md: 2rem;     /* 32px */
+  --space-lg: 4rem;     /* 64px */
+  --space-xl: 8rem;     /* 128px */
+
+  /* 5. Bordes y Sombras */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+/* Reseteo de los márgenes, el padding y el box-sizing para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para el header de la página */
+.header {
+  background-color: var(--lila);
+  color: var(--blanco);
+  padding: var(--space-sm) 10%;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--space-sm);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Estilos para el main de la página */
+/* Hero */
+.hero {
+  background-image: url("imagenes/paisaje.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: var(--blanco);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 500px;
+  text-align: left;
+  margin-right: 5%;
+}
+
+.hero-content h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: var(--font-size-h2);
+  margin-bottom: var(--space-sm);
+}
+
+.hero-content p {
+  font-size: var(--font-size-body);
+  margin-bottom: var(--space-sm);
+}
+
+.hero-content a {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--rosa);
+  color: var(--blanco);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Diseño para el section de nuestro equipo */
+.about_us-container {
+  background-color: var(--rosa);
+  padding: var(--space-md) 10%;
+}
+
+.about_us-container img {
+  float: left; 
+  width: 350px;
+  margin-right: var(--space-md); 
+  margin-bottom: var(--space-sm);
+}
+
+.about_us-info h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--blanco);
+  margin-bottom: var(--space-sm);
+}
+
+/* Diseño para los articles */
