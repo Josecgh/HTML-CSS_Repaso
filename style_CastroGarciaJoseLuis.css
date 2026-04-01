@@ -50,6 +50,18 @@
   gap: var(--space-sm);
 }
 
+.item-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item-list a:hover {
+  background-color: var(--rosa);
+  border-radius: var(--radius-md);
+  padding: 2px;
+}
+
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -139,4 +151,75 @@
   margin-bottom: var(--space-sm);
 }
 
+@media (min-width: 1020px) and (max-width: 2020px) {
+  .about_us-container {
+    padding: var(--space-md) 20%;
+    justify-content: center;
+  }
+}
+
 /* Diseño para los articles */
+.articles-container {
+  margin-top: var(--space-lg);
+  text-align: center;
+  width: 800px;
+}
+
+@media (min-width: 500px) and (max-width: 1020px) {
+  .articles-container {
+    padding: 0 var(--space-xl);
+  }
+}
+
+.articles-container article {
+  margin-bottom: var(--space-md);
+  border-top: 3px solid var(--lila_claro);
+  padding-top: var(--space-sm);
+}
+
+.articles-container article:hover {
+  border-top: 1.5px solid var(--lila_claro);
+
+  h3 {
+    color: var(--lila_claro);
+  }
+}
+
+.articles-container img {
+  width: 300px;
+}
+
+.info-article {
+  border: 2px solid var(--lila_claro);
+  padding: var(--space-md);
+  margin-top: -60px;
+}
+
+.info-article h3 {
+  padding-top: var(--space-md);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--lila_claro);
+}
+
+.info-article p {
+  margin-top: var(--space-sm);
+}
+
+@media (min-width: 1040px) and (max-width: 2020px) {
+  .articles-container {
+    width: 100%;
+    display: flex;
+    gap: var(--space-xl);
+  }
+}
+
+/* Diseñando el footer */
+footer {
+  background-color: var(--lila_claro);
+  text-align: center;
+  padding: var(--space-sm) var(--space-lg);
+}
+
+footer p:last-child {
+  margin-top: var(--space-xs);
+}
